@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculo Estatistico</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jqmath-etc-0.4.6.min.js"></script>
+    <script>
+        M.MathPlayer = false;
+        M.trustHtml = true;
+    </script>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=UnifrakturMaguntia">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jqmath-0.4.3.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculo Estatistico</h1>
+        <p class="lead">Gerador de tabela de calculo estatistico</p>
+        <hr>
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="classes">Nº de classes</label>
+                <input name="classes" type="number" class="form-control" id="classesInput" min="3" max="7" value="3" onkeydown="return false">
+            </div>
+            <div class="form-group">
+                <label for="amplitude">Amplitude</label>
+                <input name="amplitude" type="number" class="form-control" id="amplitudeInput" min="2" value="10">
+            </div>
+            <div class="form-group">
+                <label for="menorvalor">Menor Valor (classes)</label>
+                <input name="menorvalor" type="number" class="form-control" id="menorvalorInput" value="0" min="0">
+            </div>
+        </form>
+        <br>
+        <table class="table table-striped table-responsive table-bordered">
+            <thead>
+                <tr>
+                    <th>Classes</th>
+                    <th>$$F_i$$</th>
+                    <th>$$X_i (P. medio)$$</th>
+                    <th>$$Fac$$</th>
+                    <th>$$X_i*F_i$$</th>
+                    <th>$$Fr(%)$$</th>
+                    <th>$$X_i^2*f_i$$</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+            <tfoot>
+                <td></td>
+                <td>$$∑f_i=\html'&lt;span id="fitotal">0&lt;/span>'$$</td>
+                <td></td>
+                <td></td>
+                <td>$$∑X_i*f_i=\html'&lt;span id="ximulfitotaltotal">0&lt;/span>'$$</td>
+                <td>$$∑fr=\html'&lt;span id="frtotal">0&lt;/span>'$$</td>
+                <td>$$∑X_i^2*f_i=\html'&lt;span id="ximul2fitotal">0&lt;/span>'$$</td>             
+            </tfoot>
+        </table>
+        <script src="js/main.js"></script>
+</body>
+
+</html>
