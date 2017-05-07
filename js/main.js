@@ -155,11 +155,23 @@ function atualizarTabela() {
 function atualizarResultados() {
     console.log(valoresChave);
     var media = valoresChave.sumxifi / valoresChave.sumfi;
+    var umsobren = 1 / valoresChave.sumfi;
+    var xifi2 = valoresChave.sumxifi * valoresChave.sumxifi;
+    var xifi2sobren = xifi2 / valoresChave.sumfi;
+    var padraocolchete = valoresChave.sumxi2fi - xifi2sobren;
+    var padraoresultado = padraocolchete * umsobren;
     var contas = $('.contas');
     console.log(contas);
-    contas.find('#xifi').text(valoresChave.sumxifi);
-    contas.find('#fi').text(valoresChave.sumfi);
-    contas.find('#mediaResultado').text(media);
+    console.log(contas.find('.umsobren'));
+    contas.find('#xifi').text(valoresChave.sumxifi.toFixed(2));
+    contas.find('#fi').text(valoresChave.sumfi.toFixed(2));
+    contas.find('#xi2fi').text(valoresChave.sumxi2fi.toFixed(2));
+    contas.find('.umsobren').text(umsobren.toFixed(2));
+    contas.find('#xifi2').text(xifi2.toFixed(2));
+    contas.find('#xifi2sobren').text(xifi2sobren.toFixed(2));
+    contas.find('#padraocolchete').text(padraocolchete.toFixed(2));
+    contas.find('#mediaResultado').text(media.toFixed(2));
+    contas.find('#padraoresultado').text(padraoresultado.toFixed(2));
 }
 
 function montarClasseQP(linha, index) {
