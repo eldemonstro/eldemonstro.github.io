@@ -10,7 +10,7 @@
         M.MathPlayer = false;
         M.trustHtml = true;
     </script>
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=UnifrakturMaguntia">
+    <link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/jqmath-0.4.3.css">
     <link rel="stylesheet" href="css/index.css">
@@ -41,11 +41,11 @@
                 <tr>
                     <th>Classes</th>
                     <th>$$F_i$$</th>
-                    <th>$$X_i (P. medio)$$</th>
+                    <th>$$X_i \text" (P. medio)"$$</th>
                     <th>$$Fac$$</th>
-                    <th>$$X_i*F_i$$</th>
+                    <th>$$X_i⋅F_i$$</th>
                     <th>$$Fr(%)$$</th>
-                    <th>$$X_i^2*f_i$$</th>
+                    <th>$$X_i^2⋅f_i$$</th>
                 </tr>
             </thead>
             <tbody id="tbody">
@@ -56,12 +56,16 @@
                 <td>$$∑f_i=\html'&lt;span id="fitotal">0&lt;/span>'$$</td>
                 <td></td>
                 <td></td>
-                <td>$$∑X_i*f_i=\html'&lt;span id="ximulfitotaltotal">0&lt;/span>'$$</td>
+                <td>$$∑X_i⋅f_i=\html'&lt;span id="ximulfitotaltotal">0&lt;/span>'$$</td>
                 <td>$$∑fr=\html'&lt;span id="frtotal">0&lt;/span>'$$</td>
-                <td>$$∑X_i^2*f_i=\html'&lt;span id="ximul2fitotal">0&lt;/span>'$$</td>             
+                <td>$$∑X_i^2⋅f_i=\html'&lt;span id="ximul2fitotal">0&lt;/span>'$$</td>
             </tfoot>
         </table>
-        <script src="js/main.js"></script>
+        <div class="contas">
+            $$X↖{-}=(∑X_i⋅f_i)/∑f_i = \html'&lt;span id="xifi">0&lt;/span>'/\html'&lt;span id="fi">0&lt;/span>'=\html'&lt;span id="mediaResultado">0&lt;/span>'$$
+        </div>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
