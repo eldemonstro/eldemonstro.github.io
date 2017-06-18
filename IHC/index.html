@@ -7,54 +7,127 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/jquery.bxslider.min.js"></script>
   <script src="js/index.js"></script>
-  <link rel="stylesheet" href="/css/jquery.bxslider.min.css">
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/jquery.bxslider.min.css">
+  <link rel="stylesheet" href="css/index.css">
   <title>Snow Grandpa</title>
 </head>
 
 <body>
   <header>
-    <nav>
-      <a href="#">SnowGrandpas</a>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Sobre SnowGrandpas</a></li>
-        <li><a href="#">Relatos de Viajantes</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Snow Grandpas</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#sobre-anchor">Sobre SnowGrandpas</a></li>
+            <li><a href="#viagem-anchor">Locais para Viajar</a></li>
+            <li><a href="#relatos-anchor">Relatos de viajantes</a></li>
+            <li><a href="#contato-anchor">Contato</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
-  <main>
-    <img src="img/mainimg.jpg" alt="Velhinho Radical">
-    <h1>SnowGrandpas</h1>
-    <p>Desde 2017 a SnowGrandpas oferecem viagens para o pessoal da terceira idade que ainda tem pique para esportes radicais. Trazendo diversas opções de montanhas em diversos paises, nós temos a obrigação de trazer as melhores opções viagens para quem
-      o tempo de aventuras está longe de acabar (apesar dos netos acharem ao contrario).</p>
-
-    <h1>Locais para viver sua aventura:</h1>
-    <ul class="bxslider">
-      <li><img src="img/girdwood.jpg" alt="Girdwood, Alasca, Estados Unidos" title="Girdwood, Alasca, Estados Unidos">
-        <h2>Girdwood, Alasca, Estados Unidos</h2>
-        <p>Situada 64 km ao sul de Anchorage (e de seu aeroporto internacional), o humilde povoado de 2.000 habitantes tem como atividades principais ski e snowboard. O Alyeska Resort é a maior área de ski no Alasca com seis teleféricos, duas esteiras e
-          um bonde com capacidade para 60 pessoas que sobe a íngrime face norte da montanha, com vista para o oceano. Como é de se esperar do Alasca, o local nunca lota, e a melhor época para ir é em março, quando os dias tem cerca de 12 horas de luz
-          solar
-        </p>
-      </li>
-      <li><img src="img/zermatt.jpg" alt="Zermatt, Suíça" title="Zermatt, Suíça">
-        <h2>Zermatt, Suiça</h2>
-        <p>A Suíça é conhecida por suas clássicas cidades de esqui, mas Zermatt é a cereja do bolo. Ainda que cercada de picos cobertos de gelo, é dominada pela Matterhorn, uma das montanhas mais notáveis da Terra. O vilarejo permite apenas a circulação
-          de carros elétricos, onde hotéis de luxo ficam lado a lado com celeiros centenários. Zermatt tem três zonas de esqui interconectadas com vistas deslumbrantes e drops verticais de até 2.179 metros. Não perca o passeio no teleférico Matterhorn
-          Glacier Paradise, o mais alto dos Alpes, que te leva à região italiana de Breuil-Cervinia, onde o almoço custa metade do preço que você pagaria na Suíça.</p>
-      </li>
-      <li><img src="img/mont-tremblant.jpg" alt="Mont Tremblant, Quebec, Canadá" title="Mont Tremblant, Quebec, Canadá">
-        <h2>Mont Tremblant, Quebec, Canadá</h2>
-        <p>Tremblant é um dos melhores pontos de esqui no leste canadense, com 644 metros verticais de esqui e um vilarejo planejado que parece ter sido separado da Europa. Com a abertura do primeiro teleférico em 1939, Tremblant figura como uma das primeiras
-          áreas de esqui na América do Norte, ainda que o vilarejo estilo dos alpes franceses do século 18 não tenha sido construído na base dos teleféricos até os anos 1990.</p>
-      </li>
-    </ul>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+  <main class="container-fluid">
+    <section id="sobre">
+      <div class="container">
+        <img src="img/mainimg.jpg" class="img-responsive img-rounded center-img" alt="Velhinho Radical">
+        <h1 id="sobre-anchor">SnowGrandpas</h1>
+        <p class="lead">Desde 2017 a SnowGrandpas oferecem viagens para o pessoal da terceira idade que ainda tem pique para esportes radicais. Trazendo diversas opções de montanhas em diversos paises, nós temos a obrigação de trazer as melhores opções viagens para quem
+          o tempo de aventuras está longe de acabar (apesar dos netos acharem ao contrario).</p>
+      </div>
+    </section>
+    <section id="viagem">
+      <div class="container">
+        <h2 id="viagem-anchor">Locais para viver sua aventura:</h2>
+        <ul class="viagem-slider">
+          <li>
+            <img src="img/girdwood.jpg" class="img-rounded" alt="Girdwood, Alasca, Estados Unidos" title="Girdwood, Alasca, Estados Unidos">
+            <h2>Girdwood, Alasca, Estados Unidos</h2>
+            <p>
+              Situada 64 km ao sul de Anchorage (e de seu aeroporto internacional), o humilde povoado de 2.000 habitantes tem como atividades principais ski e snowboard. O Alyeska Resort é a maior área de ski no Alasca com seis teleféricos, duas esteiras e um bonde
+              com capacidade para 60 pessoas que sobe a íngrime face norte da montanha, com vista para o oceano. Como é de se esperar do Alasca, o local nunca lota, e a melhor época para ir é em março, quando os dias tem cerca de 12 horas de luz solar.
+            </p>
+            <a href="#">Viaje Já!</a>
+          </li>
+          <li>
+            <img src="img/zermatt.jpg" class="img-rounded" alt="Zermatt, Suíça" title="Zermatt, Suíça">
+            <h2>Zermatt, Suiça</h2>
+            <p>
+              A Suíça é conhecida por suas clássicas cidades de esqui, mas Zermatt é a cereja do bolo. Ainda que cercada de picos cobertos de gelo, é dominada pela Matterhorn, uma das montanhas mais notáveis da Terra. O vilarejo permite apenas a circulação de carros
+              elétricos, onde hotéis de luxo ficam lado a lado com celeiros centenários. Zermatt tem três zonas de esqui interconectadas com vistas deslumbrantes e drops verticais de até 2.179 metros. Não perca o passeio no teleférico Matterhorn Glacier
+              Paradise, o mais alto dos Alpes, que te leva à região italiana de Breuil-Cervinia, onde o almoço custa metade do preço que você pagaria na Suíça.
+            </p>
+            <a href="#">Viaje Já!</a>
+          </li>
+          <li>
+            <img src="img/mont-tremblant.jpg" class="img-rounded" alt="Mont Tremblant, Quebec, Canadá" title="Mont Tremblant, Quebec, Canadá">
+            <h2>Mont Tremblant, Quebec, Canadá</h2>
+            <p>
+              Tremblant é um dos melhores pontos de esqui no leste canadense, com 644 metros verticais de esqui e um vilarejo planejado que parece ter sido separado da Europa. Com a abertura do primeiro teleférico em 1939, Tremblant figura como uma das primeiras áreas
+              de esqui na América do Norte, ainda que o vilarejo estilo dos alpes franceses do século 18 não tenha sido construído na base dos teleféricos até os anos 1990.
+            </p>
+            <a href="#">Viaje Já!</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="relatos">
+      <div class="container">
+        <h2 id="relatos-anchor">Relatos de Viajantes:</h2>
+        <ul class="relatos-slider">
+          <li>
+            <blockquote>
+              <p>Viajar com a SnowGrandpas reativou minha vontade de viver.</p>
+              <footer><cite title="Renato Amarantes">Renato Amarantes</cite></footer>
+            </blockquote>
+          </li>
+          <li>
+            <blockquote>
+              <p>Quase morri e foi muito legal</p>
+              <footer><cite title="Gazzio Toscanno">Gazzio Toscanno</cite></footer>
+            </blockquote>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="contato">
+      <div class="container">
+        <h2 id="contato-anchor">Contato:</h2>
+        <form class="" action="index.html" method="post">
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome aqui">
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com">
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea class="form-control" rows="3" id="mensagem" placeholder="Digite aqui sua mensagem"></textarea>
+          </div>
+          <button type="submit" class="btn btn-default">Enviar</button>
+        </form>
+      </div>
+    </section>
   </main>
+
+  <footer class="rodape">
+    Criado por <cite title="Fabricio Bezerra">Fabricio Bezerra</cite> &ndash; <a href="https://github.com/eldemonstro">Github</a></br> O código fonte dessa pagina pode ser encontrado <a href="https://github.com/eldemonstro/eldemonstro.github.io/tree/master/IHC">aqui</a>.
+  </footer>
 </body>
 
 </html>

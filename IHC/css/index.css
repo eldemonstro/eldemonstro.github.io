@@ -1,0 +1,45 @@
+.center-img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.viagem-slider * {
+  padding: 0;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: justify;
+}
+
+.viagem-slider a {
+  float: right;
+  font-size: 1.3em;
+}
+
+#viagem h2 {
+  clear: both;
+}
+
+@media (max-width: 600px) {
+  .viagem-slider * {
+    margin-left: -.9em;
+  }
+}
+
+#relatos .bx-wrapper {
+  position: static !important;
+  border: 0 !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+#relatos .bx-controls {
+  display: none !important;
+}
+
+.rodape {
+  text-align: center;
+  margin-bottom: 5px;
+}
