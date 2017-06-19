@@ -17,6 +17,10 @@ a {
   text-align: justify;
 }
 
+.viagem-slider img {
+  max-height: 30em;
+}
+
 .viagem-slider a {
   float: right;
   font-size: 1.3em;
